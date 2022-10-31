@@ -2,4 +2,6 @@
 .git/
 part1/node_modules
 part1/testing
+part2/testing
+testing/
 hours.txt
