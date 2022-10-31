@@ -1,6 +1,8 @@
 const Total = ({ parts }) => {
+    const totalExercises = (parts) => parts.map(part => part.exercises).reduce((previous, current) => previous + current, 0)
+
     return (
-        <strong>total of {parts.map(part => part.exercises).reduce((previous, current) => previous + current, 0)} exercises</strong>
+        <strong>total of {totalExercises(parts)} exercises</strong>
     )
 }
 
